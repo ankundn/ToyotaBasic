@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="cards.css" rel="stylesheet" type="text/css">
+    <title>
+        TOYOTA APP
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="POST" id="the-form">
+
+            <div class="main">
+
+                <div class="one">
+                    <fieldset class="five">
+                        <legend>Customer Information</legend>
+
+                        <div class="group">
+                            <label for="customer">Customer ID: </label>
+                            <input type="text" id="customer" name="customer"><br>
+                        </div>
+
+                        <div class="group">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="name"><br>
+                        </div>
+
+                        <div class="group">
+                            <label for="state">State:</label>
+                            <select name="state" id="state">
+
+                                <option value="Kampala" selected>KLA</option>
+                                <option value="Entebbe">EBB</option>
+                                <option value="Mbarara">MBR</option>
+                            </select>
+                            <input type="checkbox" id="rc" name="rc" value="Retail Customer" checked>
+                            <label for="check">Retail Customer</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+
+                <div class="two">
+                    <fieldset class="six" id="try">
+                        <legend>Shipping</legend>
+                        <div class="trial1">
+                            <input type="radio" id="ups" name="rad" value="UPS" checked>UPS
+                            <input type="radio" id="fed" name="rad" value="Fed Ex Ground">Fed Ex Ground<br>
+                        </div>
+
+                        <div class="trial1">
+                            <input type="radio" id="us" name="rad" value="US Postal Air">US Postal Air
+                            <input type="radio" id="feda" name="rad" value="Fed Ex Air">Fed Ex Air
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="three">
+                    <fieldset class="seven">
+                        <legend>Part Ordered</legend>
+
+                        <div class="group">
+                            <label for="part">Part Number: </label>
+                            <input type="text" id="pn" name="pn"><br>
+                        </div>
+
+                        <div class="group">
+                            <label for="desc">Description: </label>
+                            <input type="text" id="desc" name="desc"><br>
+                        </div>
+
+                        <div class="group">
+                            <label for="part">Price per part: </label>
+                            <input type="text" id="ppp" name="ppp">
+
+
+
+                            <label for="quantity">Quantity: </label>
+                            <input type="text" id="qty" name="qty">
+                        </div>
+                        <div class="group">
+                            <label for="cont"></label>
+                            <input type="checkbox" id="cont" name="cont" value="Oversize Container"> Oversize Container?
+                        </div>
+                    </fieldset>
+                </div>
+
+
+
+                <div class="four">
+                    <fieldset class="eight" id="try2">
+
+
+
+
+                        <legend>Output</legend>
+                        <div class="trial">
+                            <span>Cost: </span>
+                            $<span id="cost" class="result"></span><br>
+                        </div>
+                        <div class="trial">
+                            <span>Sales Tax: </span>
+                            $<span id="sales" class="result"></span><br>
+                        </div>
+
+                        <div class="trial">
+                            <span>Shipping & Handling: </span>
+                            $<span id="ship" class="result"></span><br>
+                        </div>
+
+                        <div class="trial">
+                            <span>Total: </span>
+                            $<span id="total" class="result"></span>
+                        </div>
+
+
+                        <!-- <div class="group">
+
+
+
+
+                            <label>Cost:</label>
+                            <div class="calculation" id="cost">
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label>Sales Tax:</label>
+                            <div class="calculation" id="sales">
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label>Shipping & Handling:</label>
+                            <div class="calculation" id="ship">
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <label>Total:</label>
+                            <div class="output" id="total">
+                            </div>
+                        </div> -->
+
+                    </fieldset>
+                </div>
+
+
+            </div>
+
+            <input type="submit" value="Compute" name="Submit" id="uc" onclick="ValidData()">
+            <input type="reset" value="New Order" name="New" id="no">
+            <!-- <button class="button3 btn" type="button">Exit</button> -->
+            <!-- <input type="exit" value="Exit" name="Exit" id="ex" >  -->
+            <!-- <button class="button2 btn" type="reset">New Order</button> -->
+
+            <!-- <button class="button1 btn" type="submit" onclick="ValidData()">Compute</button> -->
+
+        </form>
+
+
+        <!-- <button class="button2 btn" type="reset">New Order</button>
+        <button class="button3 btn" type="button">Exit</button> -->
+
+    </div>
+    <script src="cards.js">
+    </script>
+</body>
+
+</html>
