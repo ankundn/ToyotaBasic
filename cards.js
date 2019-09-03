@@ -66,6 +66,6 @@ const UPS = document.getElementById("ups");
 
     }
 
-
+    order();
 }
 
