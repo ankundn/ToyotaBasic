@@ -1,4 +1,11 @@
+const order = () =>{
+    document.getElementById('customer').focus();
+}
+
+
 const ValidData = () => {
+
+    // adding an event listener so that the alert message styles can be seen after an alert is read
 document.getElementById('the-form').addEventListener('submit', (e)=>{
 e.preventDefault();
 });
